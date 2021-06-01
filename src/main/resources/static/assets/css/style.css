@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --background-color: #2b2e4a;
+    --primary-button: #e84545;
+    --secondary-color: #903749;
+    --content-color: #53354a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: var(--secondary-color);
+}
+
+.wave-column {
+    background-image: url(../svg/header-wave.svg);
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.user-profile {
+    width: 7em;
+    height: 7em;
+    background-image: url(../imgs/user.png);
+    background-size: cover;
+    border-radius: 50%;
+    justify-self: center;
+    border: 3px solid var(--primary-button);
+    box-shadow: 0 0 10px #00000033;
+}
+
+.text-light {
+    color: whitesmoke;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col-md {
+    flex: 1 auto;
+}
+
+.card-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-group .card {
+    border-radius: 5px;
+    border: 3px solid var(--primary-button);
+    background-color: var(--primary-button);
+    margin: 7px;
+    box-shadow: 0 0 10px #0000003d;
+}
+
+.card .card-img {
+    width: 13em;
+    border-radius: 5px;
+    -webkit-user-drag: none;
+}
+
+#footer {
+    background-color: var(--secondary-color);
+}
+
+.p-2 {
+    padding: 0.65em;
+}
+
+.p-4 {
+    padding: 0.85em;
+}
+
+.mb-4 {
+    margin-bottom: 2.9em;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary-button);
+    color: whitesmoke;
+}
+
+.btn.btn-primary:hover {
+    background-color: hsl(0, 49%, 48%);
+}
+
+.btn.btn-secondary {
+    background-color: var(--secondary-color);
+    color: whitesmoke;
+}
+
+.btn.btn-secondary:hover {
+    background-color: rgb(116, 51, 64);
+    color: whitesmoke;
+}
+
+.input-group {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 5px;
+}
