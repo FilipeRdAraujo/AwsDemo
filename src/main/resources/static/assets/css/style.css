@@ -116,20 +116,24 @@ body {
 .btn.btn-primary {
     background-color: var(--primary-button);
     color: whitesmoke;
+    transition: all 0.5s;
 }
 
 .btn.btn-primary:hover {
     background-color: hsl(0, 49%, 48%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.192);
 }
 
 .btn.btn-secondary {
     background-color: var(--secondary-color);
     color: whitesmoke;
+    transition: all 0.5s;
 }
 
 .btn.btn-secondary:hover {
     background-color: rgb(116, 51, 64);
     color: whitesmoke;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.192);
 }
 
 .input-group {

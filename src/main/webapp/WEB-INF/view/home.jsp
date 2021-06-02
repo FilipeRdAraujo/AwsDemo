@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page isELIgnored="false" %>
 
 <!DOCTYPE html>
@@ -46,7 +47,7 @@
                     <li class="card">
                         <img class="card-img" src="https://dr4-s3-bucket-f.s3-sa-east-1.amazonaws.com/${item.getKey().toString()}" alt="capa do filme">
                         <div>
-                            <button style="width: 100%;" class="btn btn-secondary"><i class="fas fa-trash"></i></button>
+                            <a style="width: 100%;" class="btn btn-secondary" href="/deleteFile?url=${item.getKey().toString()}" type="button"><i class="fas fa-trash"></i></a>
                         </div>
                     </li>
                 </c:forEach>
